@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    font-family: Archivo Expanded Medium;
+}
+
+main p{
+    font-size: 150%;
+}
+
+main a {
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.menu a:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.2s;
+}
+
+.menu a {
+    transition: ease-in-out 0.2s;
+}
+
+
+.menu {
+    display: flex;
+    padding-top: 5%;
+    font-size: 200%;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 3%;
+}
+
+main h2 {
+    font-family: Archivo Expanded Black;
+    font-size: 500%;
+}
+
+.design h2 {
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+@font-face {
+    font-family: Archivo Expanded Medium;
+    src: url('../fonts/Archivo_Expanded-Medium.ttf');
+}
+
+@font-face {
+    font-family: Archivo Expanded Bold;
+    src: url('../fonts/Archivo_Expanded-Bold.ttf');
+}
+
+@font-face {
+    font-family: Archivo Expanded Black;
+    src: url('../fonts/Archivo_Expanded-Black.ttf');
+}
