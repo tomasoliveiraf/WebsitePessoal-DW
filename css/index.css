@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 115%;
+}
+
+body {
+    background-image: url('../img/bgd.jpg');
 }
 
 main {
@@ -25,25 +32,27 @@ header {
     font-family: Archivo Expanded Medium;
 }
 
-.menu a:hover {
-    transform: scale(1.2);
-    transition: ease-in-out 0.2s;
+.navbar a:hover {
+    /*transform: scale(1.2);*/
+    color: white;
+    background-color: black;
+    transition: ease-in-out 0.5s;
 }
 
-.menu a {
-    transition: ease-in-out 0.2s;
+.navbar a {
+    transition: ease-in-out 0.5s;
 }
 
 
-.menu {
+.navbar {
     position: sticky;
     display: flex;
-    padding-top: 5%;
+    padding-top: 8%;
     font-size: 200%;
     justify-content: center;
 }
 
-.menu a {
+.navbar a {
     padding: 3%;
 }
 
