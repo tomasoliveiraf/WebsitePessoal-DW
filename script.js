@@ -25,9 +25,9 @@ var y = document.getElementById("musica2");
 const btn3 = document.getElementById("audiovisual");
 var z = document.getElementById("audiovisual2");
 
-x.style.display = "none";
 
 btn.onclick = function myFunction() {
+  x.style.display = "none";
     if (x.style.display === "none") {
       x.style.display = "block";
       y.style.display = "none";
@@ -40,6 +40,7 @@ btn.onclick = function myFunction() {
 }
 
 btn2.onclick = function myFunction() {
+  y.style.display = "none";
     if (y.style.display === "none") {
       y.style.display = "block";
       z.style.display = "none";
@@ -52,6 +53,7 @@ btn2.onclick = function myFunction() {
   }
 
 btn3.onclick = function myFunction() {
+  z.style.display = "none";
     if (z.style.display === "none") {
       z.style.display = "block";
       x.style.display = "none";
