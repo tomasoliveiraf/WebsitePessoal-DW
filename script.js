@@ -25,6 +25,8 @@ var y = document.getElementById("musica2");
 const btn3 = document.getElementById("audiovisual");
 var z = document.getElementById("audiovisual2");
 
+x.style.display = "none";
+
 btn.onclick = function myFunction() {
     if (x.style.display === "none") {
       x.style.display = "block";
