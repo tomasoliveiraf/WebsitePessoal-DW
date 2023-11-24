@@ -217,11 +217,8 @@ main h3 {
 
 /*RESPONSIVIDADE*/
 
-@media screen and (min-width: 1130px) {
 
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 929px) {
 
     .navbar {
         font-size: 100%;
@@ -247,8 +244,56 @@ main h3 {
         width: 170%;
     }
 
+    .audiovisual p{
+        width: 100%;
+    }
+
+    .audiovisual img{
+        top: 400px;
+        left: -100px;
+    }
+
     body {
-        background-size: 150%;
+        background-size: 180%;
+    }
+
+    .item_img1 {
+        top: 350px;
+        left: -100px;
+    }
+    
+    .item_img2 {
+        top: 350px;
+        left: -100px;
+    }
+
+    .item_container {
+        display: flex;
+        width: 97%;
+    }
+
+
+}
+
+@media screen and (max-width: 1330px) and (min-width: 930px) {
+
+    .item_img1 {
+        top: 80px;
+        left: 0px;
+    }
+
+    .item_img2 {
+        top: 80px;
+        left: -80px;
+    }
+
+    .item_container {
+        display: flex;
+        width: 97%;
+    }
+
+    .audiovisual img {
+        top: 100px;
     }
 
 }
