@@ -2,7 +2,13 @@ html {
     scroll-behavior: smooth;
   }
 
+  ::selection {
+    color: none;
+    background: none;
+}
+
 * {
+    cursor: url(../img/lapisicon.png) 0 50, auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,54 +18,73 @@ html {
     background-size: 115%;
 }
 
-body {
-    background-image: url('../img/bgd.jpg');
+.item_container img:hover{
+    cursor: url(../img/lapis3.png) 25 50, auto;
+    transition: ease-in-out 0.5s;
 }
 
-canvas {
+body {
+    background-image: url('../img/bgd.jpg');
+    overflow-x: hidden;
+}
+
+/*canvas {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-}
+}*/
 
 main {
-    font-family: Archivo Expanded Medium;
+    font-family: Alte Haas Grotesk Bold;
 }
 
 main p{
     font-size: 130%;
-    font-family: Archivo Expanded Light;
+    font-family: Alte Haas Grotesk Regular;
 }
 
 main a {
-    color: black;
+    color: rgb(32, 32, 32);
+    mix-blend-mode: multiply();
 }
 
 header {
     position: sticky;
     text-align: center;
     padding-top: 10%;
-    font-family: Archivo Expanded Medium;
+    mix-blend-mode: multiply();
+    font-family: Alte Haas Grotesk Bold;
+}
+
+.logo p{
+    font-family: Photograph Signature;
+    color: rgb(32, 32, 32);
+    mix-blend-mode: multiply();
+    font-size: 1100%;
 }
 
 .navbar a:hover {
     /*transform: scale(1.2);*/
     color: white;
-    background-color: black;
+    background-color: rgb(32, 32, 32);
+    mix-blend-mode: multiply();
+    transition: ease-in-out 0.5s;
+    cursor: url(../img/lapis3.png) 25 50, auto;
     transition: ease-in-out 0.5s;
 }
 
 .navbar a {
     transition: ease-in-out 0.5s;
-    color: black;
+    color: rgb(32, 32, 32);
+    mix-blend-mode: multiply();
 }
 
 
 .navbar {
-    position: sticky;
+    z-index: 2;
     display: flex;
-    padding-top: 8%;
+    padding-top: 6%;
     font-size: 200%;
     justify-content: center;
 }
@@ -69,8 +94,14 @@ header {
 }
 
 main h2 {
-    font-family: Archivo Expanded Black;
-    font-size: 500%;
+    font-family: Alte Haas Grotesk Regular rgb(32, 32, 32);
+    mix-blend-mode: multiply();
+    font-size: 450%;
+}
+
+main h3 {
+    font-family: Alte Haas Grotesk Regular rgb(32, 32, 32);
+    mix-blend-mode: multiply();
 }
 
 /*ANIMATE
@@ -87,24 +118,87 @@ main h2 {
     transform: translateX(0);
 }*/
 
-/*DESIGN*/
+/* COINTAINERS */
+
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.image-container a {
+    margin: 0;
+    right: 0;
+    padding: 0;
+}
+
+
+@keyframes show {
+    0%{ scale: 0 }
+    80%{ scale: 1.2 }
+    100%{ scale: 1 }
+}
+
+.item_img1 {
+    transform: rotate(-20deg);
+    position: relative;
+    animation: show 400ms ease-in forwards;
+    left: -50px;
+}
+
+.item_img2 {
+    position: relative;
+    left: -200px;
+    bottom: 50px;
+    transform: rotate(20deg);
+    animation: show 400ms 300ms ease-in forwards;
+}
+
+/*[class*="image_container"] img{
+    position: relative;
+}*/
+
+.item_container {
+    margin-top: 5%;
+    display: flex;
+}
+
+.item_container #texto{
+    margin-left: 3%;
+}
+
+.item_container p{
+   width: 75%;
+}
+
+.icons_container {
+
+}
 
 #design2, #musica2, #audiovisual2 {
     display: none;
+    margin-bottom: 1%;
 }
 
-.info h2 {
+.info h2, h3 {
     margin-left: 5%;
-    margin-top: 5%;
+}
+
+.info h3 {
+    margin-top: 3%;
 }
 
 .info p {
     display: block;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 5%;
-    margin-right: 60%;
-    margin-bottom:10%;
 }
+
+.info {
+    top: 2%;
+}
+
 
 
 @font-face {
@@ -126,3 +220,25 @@ main h2 {
     font-family: Archivo Expanded Light;
     src: url('../fonts/Archivo_Expanded-Light.ttf');
 }
+
+@font-face {
+    font-family: Photograph Signature;
+    src: url('../fonts/Photograph Signature.ttf');
+}
+
+
+@font-face {
+    font-family: Alte Haas Grotesk Regular;
+    src: url('../fonts/AlteHaasGroteskRegular.ttf');
+}
+
+@font-face {
+    font-family: Alte Haas Grotesk Bold;
+    src: url('../fonts/AlteHaasGroteskBold.ttf');
+}
+
+
+
+
+
+

@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <div class="animate_animated animate__zoomIn">
-            <img src="img/logo.png" alt="TOMÁS OLIVEIRA" width="40%"/>
+        <div class="logo" id="header-container">
+            <!---<p>Tomás Oliveira</p>--->
+            <img src="img/header.svg" alt="TOMÁS OLIVEIRA" width="60%"/>
             </div>
         </div>
 
@@ -26,39 +26,65 @@
 
         <div class="info">
         <div id="design2" class="design">
-            <a><h2 class="animate-on-scroll">DESIGN</h2></a>
+            <div class="item_container">
+                <a id="texto">
+                    <h2 class="animate__animated animate__fadeInLeft">DESIGN</h2>
+                    <p class="animate__animated animate__fadeInLeft">A minha formação é no campo das artes visuais, área que sempre me despertou interesse e em que terminei o secundário, em 2020.
+                        Em 2023 licenciei-me em Design e Multimédia pela Faculdade de Ciências e Tecnologias da Universidade de Coimbra, onde me encontro, atualmente, a frequentar
+                        o mestrado na mesma área. Dentro deste mundo, creio que os meus pontos fortes recaiem sobre o design gráfico, editorial e de comunicação.</p>
+                        <br/>
+                </a>
         
-            <a><p class="animate-on-scroll">A minha formação é no campo das artes visuais, área que sempre me despertou interesse e em que terminei o secundário, em 2020.
-                Em 2023 licenciei-me em Design e Multimédia pela Faculdade de Ciências e Tecnologias da Universidade de Coimbra, onde me encontro, atualmente, a frequentar
-                o mestrado na mesma área. Dentro deste mundo, creio que os meus pontos fortes recaiem sobre o design gráfico, editorial e de comunicação.</p>
-            </a>
+                <a class="image-container">
+                    <a href="https://student.dei.uc.pt/~tofernandes/" target=”_blank”><img class="item_img1" id="imgdesign1" src="img/design1.png" width="90%"></a>
+                    <a href="https://www.behance.net/tomasoliveiraf" target=”_blank”><img class="item_img2" id="imgdesign2" src="img/design2.png" width="110%"></a>
+                </a>
+            </div>
         </div>
 
         <div id="musica2" class="musica">
-            <h2 class="animate-on-scroll">MÚSICA</h2>
-        
-            <p class="animate-on-scroll">Aos 15 anos ganhei um gosto especial pela música e comecei a aprender a tocar guitarra. Com o tempo, aprendi a tocar mais instrumentos
-                (baixo, ukulele, piano) e a dedicar-me ao mundo da produção musical. Atualmente, desde 2020, tenho um projeto musical em nome próprio (Tomás Oliveira) sob o qual vim a criar os meus primeiros
-                originais, que escrevi, compus, gravei, produzi e misturei. Em 2022 comecei a dar os meus primeiros concertos ao vivo em nome próprio acompanhado pela minha banda (carinhosamente apelidada "Os Última da Hora"),
-                e em Outubro de 2023 lancei o meu primeiro álbum de originais, "Lamiré".
-            </p>
+            <div class="item_container">
+                <a id="texto">
+                    <h2 class="animate__animated animate__fadeInLeft">MÚSICA</h2>
+                    <p class="animate__animated animate__fadeInLeft">Aos 15 anos ganhei um gosto especial pela música e comecei a aprender a tocar guitarra. Com o tempo, aprendi a
+                        mais instrumentos e dediquei-me ao mundo da produção musical. Desde 2020, tenho um projeto musical em nome próprio sob o qual vim a criar os meus primeiros
+                        originais, que escrevi, compus, gravei, produzi e misturei. Em 2022 comecei a dar os meus primeiros concertos ao vivo em nome próprio acompanhado pela minha banda,
+                        e em Outubro de 2023 lancei o meu primeiro álbum de originais, "Lamiré".
+                    </p>
+            </a>
+
+            <a class="image-container">
+                <a href="https://onerpm.link/220884326842" target=”_blank”><img class="item_img1" id="imgmusica1" src="img/musica1.png" width="90%"></a>
+                <a href="https://www.youtube.com/watch?v=UeVcCJdu9-s" target=”_blank”><img class="item_img2" id="imgmusica2" src="img/musica2.png" width="110%"></a>
+            </a>
+            </div>
         </div>
 
         <div id="audiovisual2" class="audiovisual">
-            <h2 class="animate-on-scroll">AUDIOVISUAL</h2>
+            <div class="item_container">
+                <a id="texto">
+                <h2 class="animate__animated animate__fadeInLeft">AUDIOVISUAL</h2>
         
-            <p class="animate-on-scroll">Desde novo tenho um grande interesse pelo mundo do audiovisual, e aprendi sozinho fotografia, produção e pós-produção
+                <p class="animate__animated animate__fadeInLeft">Desde novo tenho um grande interesse pelo mundo do audiovisual, em especial pela fotografia, produção e pós-produção
                 de vídeo. Já mais velho ganhei um gosto especial pelo cinema, e comecei a especializar a minha formação em captação e pós-produção de áudio. Mais recentemente, tenho vindo
                 a colaborar como diretor de som e pós-produtor em curtas-metragens - "O Alto do Mártir" (2021) e "Berço" (2023) de Carolina Costa - que marcaram lugar em
-                diversos festivais de cinema do país. Em 2022 fiz parte da residência cinematográfica "MDOC - Plano Frontal" (Ao Norte),
-                da qual resultou a curta "La Larai" (Carolina Costa, 2023).
-            </p>
+                diversos festivais de cinema do país. Em 2022 fiz parte da residência cinematográfica "MDOC - Plano Frontal",
+                da qual resultou a curta "La Larai" (2023).
+                </p>
+            </a>
+
+            <a class="image-container">
+                <a href="https://www.youtube.com/watch?v=85L27l6hYl8&ab_channel=Doclisboa" target=”_blank”><img class="item_img1" id="imgaudiovisual1" src="img/audiovisual1.png" width="100%"></a>
+                <a href="https://www.linkedin.com/in/tomasoliveiraf/" target=”_blank”><img class="item_img2" id="imgaudiovisual2" src="img/audiovisual2.png" width="120%"></a>
+            </a>
+            </div>
         </div>
     </div>
     </main>
-    <canvas id="drawCanvas"></canvas>
+    <!---<canvas id="drawCanvas"></canvas>--->
     <script src="script.js"></script>
     <script src="libraries/p5.js"></script>
-    <!---<canvas id="drawCanvas"></canvas>---->
+    <script src="canvas.js"></script>
+    <script src="libraries/vara.min.js"></script>
 </body> 
 </html>
