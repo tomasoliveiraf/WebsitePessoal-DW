@@ -28,12 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-/*canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}*/
 
 main {
     font-family: Alte Haas Grotesk Bold;
@@ -104,20 +98,6 @@ main h3 {
     mix-blend-mode: multiply();
 }
 
-/*ANIMATE
-
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateX(-300px);
-    transition: all 0.4s ease-out;
-    transition-delay: 0.2s;
-}
-
-.animate {
-    opacity: 1;
-    transform: translateX(0);
-}*/
-
 /* COINTAINERS */
 
 .image-container {
@@ -155,9 +135,6 @@ main h3 {
     animation: show 400ms 300ms ease-in forwards;
 }
 
-/*[class*="image_container"] img{
-    position: relative;
-}*/
 
 .item_container {
     margin-top: 5%;
@@ -238,6 +215,43 @@ main h3 {
 }
 
 
+/*RESPONSIVIDADE*/
+
+@media screen and (min-width: 1130px) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        font-size: 100%;
+    }
+
+    .info h2 {
+        font-size: 300%;
+    }
+
+    .info p {
+        font-size: 100%;
+    }
+
+    .item_container p {
+        width: 100%;
+    }
+
+    .design p {
+        width: 180%;
+    }
+
+    .musica p {
+        width: 170%;
+    }
+
+    body {
+        background-size: 150%;
+    }
+
+}
 
 
 
