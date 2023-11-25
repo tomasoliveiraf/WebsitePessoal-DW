@@ -241,16 +241,23 @@ main h3 {
     }
 
     .musica p {
-        width: 170%;
+        width: 180%;
     }
 
     .audiovisual p{
-        width: 100%;
+        width: 170%;
     }
 
-    .audiovisual img{
-        top: 400px;
-        left: -100px;
+    #imgaudiovisual2{
+        width: 110%;
+    }
+
+    #imgaudiovisual1{
+        width: 90%;
+    }
+
+    .info h2 {
+        font-size: 180%;
     }
 
     body {
